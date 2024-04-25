@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+*:focus {
+    outline: none;
+    border: 3px solid rgb(3, 139, 250);
+}
+
+/* forms style */
+.wrapperForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 450px;
+    height: 100%;
+}
+
+.titleForm {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#firstName,
+#secondName,
+#email,
+#password,
+#signInEmail,
+#signInPassword,
+#submitSignUp,
+#submitSignIn {
+    box-sizing: border-box;
+    height: 50px;
+    width: 450px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.existEmail,
+.lSEmpty,
+.error {
+    width: 220px;
+    height: 50;
+    background-color: #e92525d9;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    margin: -15px 0px 10px;
+    display: none;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    width: 300px;
+}
+
+#submitSignUp,
+#submitSignIn,
+#signIn {
+    background-color: rgb(40, 127, 227);
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+#btn-signIn,
+#btn-signUp {
+    text-align: left;
+    color: blue;
+    width: 85px;
+    border: none;
+    background-color: azure;
+}
+
+#btn-signUp:hover,
+#btn-signIn:hover {
+    text-decoration: underline;
+}
+
+.signInForm {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 450px;
+    height: 100%;
+}
+
+#signIn,
+#submitSignIn {
+    background-color: green;
+}
+
+.formAccont {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto {
+    margin: 30px auto;
+    width: 130px;
+    height: 130px;
+}
+
+.name,
+.profileEmail {
+    margin: 20px auto;
+}
+.name{
+    font-weight: bold;
+    font-size: 40px;
+}
+.profileEmail{
+    color: gray;
+    font-size: 25px;
+}
+#btn {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    padding: 7px;
+    margin-top: 70px;
+}
