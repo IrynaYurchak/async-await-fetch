@@ -5,47 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapperForm">
-        <h5 class="titleForm">Please sign up</h5>
-        <form action="" name="signUp">
-            <input type="text" name="firstName" id="firstName" placeholder="first name" checked>
-            <input type="text" name="secondName" id="secondName" placeholder="second name" checked>
-            <input type="email" name="email" id="email" placeholder="enter email" checked>
-            <div class="existEmail">This email already exist</div>
-            <input type="password" name="password" id="password" placeholder="password" checked>
-            <input type='submit' name="submit" value='Sign Up' id="submitSignUp">
-        </form>
-        <input type="button" id="btn-signIn" value="Sign in now">
+    <div class="blockSearch">
+        <input type="text" id="movieName" placeholder="write movie name">
+        <input type="submit" name="submit" value='search' id="search" onclick="search()">
     </div>
-
-    <div class="signInForm">
-        <h5 class="titleForm">Please sign in</h5>
-        <form name="signIn">
-            <input type="email" name="email" id="signInEmail" placeholder="enter email" checked>
-            <input type="password" name="password" id="signInPassword" placeholder="password" checked>
-            <div class="lSEmpty">localStorage is empty</div>
-            <div class="error">Incorrect email or password </div>
-            <input type='submit' name="submitSignIn" value='Sign In' id="submitSignIn">
-        </form>
-        <input type="button" id="btn-signUp" value="Sign up now">
-
+    <div class="content" id="movieList">
     </div>
-    <div class="formAccont">
-        <div class="accountTop"></div>
-        <img class="foto" src="img/male.png" alt="">
-        <div class="name">
-            <div class="profileFirstName"></div>
-            <div class="profileSecondName"></div>
+    <div class="modal-container "></div>
+    <div class="content-detail">
+        <div id="photo" class="block-img big"></div>
+        <div class="block-right">
+            <div id="name" class="block-name big"></div>
+            <div class="about-film">
+                <div id="rated"></div>
+                <div id="text"></div>
+                <div id="written"></div>
+                <div id="derected"></div>
+                <div id="starring"></div>
+                <div id="boxoffice"></div>
+                <div id="awards"></div>
+                <div id="ratings"></div>
+            </div>
         </div>
-        <div class="profileEmail"></div>
-        <input type="button" id="btn" name="button" value="Sign up">
+
     </div>
     <script src="script.js">
     </script>
 </body>
+
 </html>

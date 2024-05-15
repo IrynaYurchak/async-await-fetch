@@ -1,133 +1,135 @@
-body {
+.blockSearch {
     display: flex;
     justify-content: center;
-    background-color: azure;
+    margin: 30px;
 }
 
-*:focus {
+#movieName:focus {
     outline: none;
-    border: 3px solid rgb(3, 139, 250);
+    border: 3px solid rgba(3, 139, 250, 0.509);
 }
 
-/* forms style */
-.wrapperForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    width: 450px;
-    height: 100%;
+#search {
+    background-color: rgb(0, 128, 0);
+    color: white;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
 }
 
-.titleForm {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-#firstName,
-#secondName,
-#email,
-#password,
-#signInEmail,
-#signInPassword,
-#submitSignUp,
-#submitSignIn {
+#movieName {
+    width: 400px;
+    height: 35px;
     box-sizing: border-box;
-    height: 50px;
-    width: 450px;
     padding-left: 10px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-}
-
-.existEmail,
-.lSEmpty,
-.error {
-    width: 220px;
-    height: 50;
-    background-color: #e92525d9;
-    color: white;
-    text-align: center;
-    font-size: 21px;
-    margin: -15px 0px 10px;
-    display: none;
-    padding-left: 10px;
+    margin-right: 20px;
     border-radius: 5px;
 }
 
-.error {
-    width: 300px;
+.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-evenly;
 }
 
-#submitSignUp,
-#submitSignIn,
-#signIn {
-    background-color: rgb(40, 127, 227);
+.block-content {
+    width: 250px;
+    height: 470px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.block-img {
+    height: 65%;
+}
+
+.block-name {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.806);
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-movie,
+.block-year {
+    font-size: 13px;
+    color: rgb(48, 47, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details {
+    background-color: rgb(5, 149, 5);
+    width: 100%;
+    border-radius: 3px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    border-radius: 8px;
-    border: none;
+    font-size: 17px;
+    margin-top: 10px;
 }
 
-#btn-signIn,
-#btn-signUp {
-    text-align: left;
-    color: blue;
-    width: 85px;
-    border: none;
-    background-color: azure;
-}
-
-#btn-signUp:hover,
-#btn-signIn:hover {
-    text-decoration: underline;
-}
-
-.signInForm {
+.content-detail {
+    width: 80%;
+    border-radius: 5px;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    width: 450px;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+#photo {
+    width: 36%;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.block-right {
+    width: 70%;
     height: 100%;
 }
 
-#signIn,
-#submitSignIn {
-    background-color: green;
+.block-name.big {
+    background-color: lightgrey;
+    height: 50px;
+    width: 100%;
+    font-size: 22px;
 }
-
-.formAccont {
+#rated,
+#text,
+#written,
+#derected,
+#starring,
+#boxoffice,
+#awards,
+#ratings {
+    margin: 20px 0px;
+}
+span{
+   font-weight: bold;
+}
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3c3a3a9e;
+    z-index: -1;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.foto {
-    margin: 30px auto;
-    width: 130px;
-    height: 130px;
-}
-
-.name,
-.profileEmail {
-    margin: 20px auto;
-}
-.name{
-    font-weight: bold;
-    font-size: 40px;
-}
-.profileEmail{
-    color: gray;
-    font-size: 25px;
-}
-#btn {
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    font-size: 30px;
-    border: none;
-    padding: 7px;
-    margin-top: 70px;
-}
